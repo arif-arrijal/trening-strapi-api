@@ -1,0 +1,51 @@
+{
+  "name": "trening",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "develop-local": "NODE_ENV=local strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "gcp-build": "strapi build",
+    "deploy": "gcloud app deploy app.yaml"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^28.0.0",
+    "@ckeditor/ckeditor5-build-decoupled-document": "^28.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "knex": "0.21.18",
+    "mysql": "2.18.1",
+    "slugify": "^1.5.3",
+    "strapi": "^3.6.2",
+    "strapi-admin": "^3.6.5",
+    "strapi-connector-bookshelf": "3.6.2",
+    "strapi-connector-mongoose": "^3.6.2",
+    "strapi-generate-plugin": "^3.6.3",
+    "strapi-plugin-content-manager": "^3.6.5",
+    "strapi-plugin-content-type-builder": "^3.6.5",
+    "strapi-plugin-documentation": "^3.1.4",
+    "strapi-plugin-email": "3.6.2",
+    "strapi-plugin-entity-relationship-chart": "^3.1.0",
+    "strapi-plugin-graphql": "^3.6.2",
+    "strapi-plugin-i18n": "^0.0.0",
+    "strapi-plugin-upload": "^3.1.4",
+    "strapi-plugin-users-permissions": "^3.1.4",
+    "strapi-provider-upload-google-cloud-storage": "^3.6.3",
+    "strapi-utils": "3.6.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "1021612d-0cd7-4e1d-adfe-f599f254a3d9"
+  },
+  "engines": {
+    "node": "14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

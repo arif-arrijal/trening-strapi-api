@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_rate_rates",
+  "info": {
+    "name": "Rate",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "required": true,
+      "min": 1,
+      "default": 1
+    },
+    "review": {
+      "type": "richtext"
+    }
+  }
+}

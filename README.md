@@ -1,2 +1,3 @@
-# trening-strapi-api
-Strapi API services for trening
+# Strapi application
+
+A quick description of your strapi application

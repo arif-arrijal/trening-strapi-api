@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "materials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "material.material"
+    },
+    "price_info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "price-info.price-info",
+      "required": true
+    },
+    "schedules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.schedule"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rate.rate"
+    },
+    "categories": {
+      "collection": "categories"
+    },
+    "certificate": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "cover_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "trainer": {
+      "model": "trainer"
+    },
+    "slug": {
+      "type": "text"
+    },
+    "categories_slug": {
+      "type": "text",
+      "private": true
+    },
+    "trainer_slug": {
+      "type": "text",
+      "private": true
+    },
+    "final_price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "private": false
+    }
+  }
+}

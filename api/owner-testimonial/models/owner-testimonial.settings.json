@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "owner_testimonials",
+  "info": {
+    "name": "owner_testimonial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testimonial": {
+      "type": "text"
+    },
+    "employee": {
+      "model": "employee"
+    }
+  }
+}

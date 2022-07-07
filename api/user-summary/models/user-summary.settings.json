@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_summaries",
+  "info": {
+    "name": "user_summary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "users": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "total_reviews": {
+      "type": "integer",
+      "default": 0
+    },
+    "total_courses": {
+      "type": "integer",
+      "default": 0
+    },
+    "total_favorites": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

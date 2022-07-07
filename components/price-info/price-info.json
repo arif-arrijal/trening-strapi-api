@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_price_info_price_infos",
+  "info": {
+    "name": "Price Info",
+    "icon": "money-bill"
+  },
+  "options": {},
+  "attributes": {
+    "base_price": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    },
+    "discount": {
+      "type": "float",
+      "max": 100,
+      "min": 0
+    }
+  }
+}

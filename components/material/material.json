@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_material_materials",
+  "info": {
+    "name": "Material",
+    "icon": "comment-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "live_session",
+        "file",
+        "video",
+        "sound"
+      ],
+      "required": true,
+      "default": "file"
+    }
+  }
+}

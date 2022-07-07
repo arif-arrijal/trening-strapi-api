@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/owner-testimonials",
+      "handler": "owner-testimonial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/owner-testimonials/count",
+      "handler": "owner-testimonial.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/owner-testimonials/:id",
+      "handler": "owner-testimonial.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/owner-testimonials",
+      "handler": "owner-testimonial.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/owner-testimonials/:id",
+      "handler": "owner-testimonial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/owner-testimonials/:id",
+      "handler": "owner-testimonial.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_schedule_schedules",
+  "info": {
+    "name": "Schedule",
+    "icon": "sticky-note",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "topics": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "default": 1
+    }
+  }
+}
